@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+@media  all and (min-width: 767px) {
+*,*::after,*::before{
+padding:0;
+margin:0;
+}
+    .parent
+    {
+        width: 100%;        
+        height:100%;
+        display:block;
+        
+    }
+    .mobparent
+    {
+        width: 100%;        
+        height:100%;
+        display:none;
+       
+    }
+    .imgresponsive
+    {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    }
+}
+
+@media not all and (min-width: 767px) {
+    *,*::after,*::before{
+padding:0;
+margin:0;
+}
+    .parent
+    {
+        width: 100%;        
+        height:100%;
+        display:none;
+        
+    }
+    .mobparent
+    {
+        width: 100%;        
+        height:auto;
+        display:block;
+       
+    }
+    .imgresponsive
+    {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+}
+
+   </style>
+</head>
+
+   <body>
+    <div class="parent">
+      <img src = "assets/img/Web-banner.jpg" class = "imgresponsive" alt = "Online Training"  >
+    </div>
+    <div class="mobparent">
+      <img src = "assets/img/mobile-banner.jpg" class = "imgresponsive" alt = "Online Training">
+    </div>
+   </body>
+</html>
