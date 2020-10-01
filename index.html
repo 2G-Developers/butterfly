@@ -1,73 +1,39 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-
-@media  all and (min-width: 767px) {
-*,*::after,*::before{
-padding:0;
-margin:0;
-}
-    .parent
-    {
-        width: 100%;        
-        height:100%;
-        display:block;
-        
-    }
-    .mobparent
-    {
-        width: 100%;        
-        height:100%;
-        display:none;
-       
-    }
-    .imgresponsive
-    {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    }
-}
-
-@media not all and (min-width: 767px) {
-    *,*::after,*::before{
-padding:0;
-margin:0;
-}
-    .parent
-    {
-        width: 100%;        
-        height:100%;
-        display:none;
-        
-    }
-    .mobparent
-    {
-        width: 100%;        
-        height:auto;
-        display:block;
-       
-    }
-    .imgresponsive
-    {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    }
-}
-
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Butterfly</title>
 </head>
 
-   <body>
+<body>
+
     <div class="parent">
-      <img src = "assets/img/Web-banner.jpg" class = "imgresponsive" alt = "Online Training"  >
+        
+        <div class="content-wrapper">
+            <div class="content-left">
+                <div class="logo">
+                <img src="./assets/img/Logo.svg" alt="Logo">
+                </div>
+                <div class="content-title">
+                    <p class="secondary-heading">Something extremely interesting is</p>
+                    <h2 class="primary-heading">Coming soon.</h2>                
+                    <p class="secondary-heading marginbottom">That's all we can say for now. Shush!</p>
+                    <p class="small-heading">Meanwhile, checkout our social pages.</p>
+                    
+                </div>
+           </div>
+            <div class="content-image">
+                <img src="./assets/img/Vector.svg" alt="notify">
+            </div>
+        </div>
+        <div class="side-svg">
+        <img src="./assets/img/Border2.svg" alt="Border2">
+        </div>
+        <div class="left-circle"><img src="./assets/img/Border1.svg" alt="Border1"></div>
     </div>
-    <div class="mobparent">
-      <img src = "assets/img/mobile-banner.jpg" class = "imgresponsive" alt = "Online Training">
-    </div>
-   </body>
+    
+</body>
 </html>
