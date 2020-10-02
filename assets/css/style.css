@@ -88,13 +88,15 @@ body {
     justify-content: center;
 }
 .primary-heading {
-    font-size: clamp(2rem, 4vw, 4.5rem);
+    font-size: clamp(5rem, 5vw, 5rem);
     text-transform: uppercase;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     line-height: .875;
 }
 
 .secondary-heading {
-    font-size: clamp(1rem, 3.5vw, 3rem);
+    font-size: clamp(2rem, 2.2vw, 2.5rem);
 }
 
 .small-heading {
@@ -124,14 +126,14 @@ body {
 
 @media screen and (max-width: 436px) {
     html {
-        font-size: 50%;
+        font-size: 25%;
     }
 }
 
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 56.25%;
+        font-size: 25%;
     }
 
     body {
