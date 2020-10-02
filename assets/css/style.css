@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: space-between;
 }
 .primary-heading {
     font-size: clamp(5rem, 5vw, 5rem);
@@ -132,7 +132,7 @@ body {
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 50%;
+        font-size: 40%;
     }
 
     body {
@@ -157,6 +157,7 @@ body {
     }
 
     .content-title {
+        margin-top: 3vh;
         margin-bottom: 0;
         flex-grow: 1;
     }
@@ -183,7 +184,13 @@ body {
         align-items: center;
         flex-wrap: nowrap;
     }
-
+    .primary-heading {
+    font-size: clamp(4.75rem, 3vw, 4.5rem);
+    text-transform: uppercase;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    line-height: .875;
+}
     .parent {
         height: 80vh;
     }
