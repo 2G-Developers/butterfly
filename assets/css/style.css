@@ -126,6 +126,16 @@ body {
     display: none;
 }
 
+
+.content-icons {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.content-icons > a {
+    margin-right: 1rem;
+}
+
 @media screen and (max-width: 1300px) {
     html {
         font-size: 75%;
@@ -238,13 +248,4 @@ body {
     .left-circle {
         right: -32%;
     }
-}
-
-.content-icons {
-    display: flex;
-    margin-top: 1rem;
-}
-
-.content-icons > a {
-    margin-right: 1rem;
 }
