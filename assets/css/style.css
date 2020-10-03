@@ -10,8 +10,7 @@ html {
 }
 
 body {
-    min-height: 100%;
-    /* height: 100vh; */
+    height: 100%;
     background-color: #EC4D37;
     position: relative;
     overflow: hidden;
@@ -22,8 +21,6 @@ body {
 .content-main {
     display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
-    /* align-items: flex-start; */
     align-items: center;
     position: relative;
     flex-grow: 1;
@@ -31,7 +28,7 @@ body {
 
 .parent {
     position: relative;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -207,7 +204,7 @@ body {
     line-height: .875;
 }
     .parent {
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
     }
 
@@ -225,8 +222,12 @@ body {
         font-size: 50%;
     }
 
+    body {
+        height: 100%;
+    }
+
     .parent {
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
     }
 
