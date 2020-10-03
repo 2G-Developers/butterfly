@@ -69,7 +69,7 @@ body {
 
 .content-logo {
     z-index: 100;
-    max-width:23%
+    /* max-width:23% */
 }
 
 .content-logo img {
@@ -116,23 +116,26 @@ body {
 }
 
 .marginbottom {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .side-svg-mobile {
     display: none;
 }
 
-@media screen and (max-width: 436px) {
+@media screen and (max-width: 1025px) {
     html {
-        font-size: 50%;
+        font-size: 56.25%;
+    }
+
+    .side-svg {
+        right: -35.5%;
     }
 }
 
-
 @media screen and (max-width: 768px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
     }
 
     body {
@@ -192,7 +195,7 @@ body {
     line-height: .875;
 }
     .parent {
-        height: 80vh;
+        height: 90vh;
     }
 
     .left-circle {
@@ -202,4 +205,23 @@ body {
         position: fixed;
         transform: rotate(180deg);
     }
+}
+
+@media screen and (max-width: 436px) {
+    html {
+        font-size: 50%;
+    }
+
+    .left-circle {
+        right: -32%;
+    }
+}
+
+.content-icons {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.content-icons > a {
+    margin-right: 1rem;
 }
