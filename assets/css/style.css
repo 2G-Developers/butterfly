@@ -231,6 +231,10 @@ body {
         overflow: hidden;
     }
 
+    .content-icons > a {
+        margin-right: 2rem;
+    }
+
     .left-circle {
         right: -32%;
     }
@@ -242,5 +246,5 @@ body {
 }
 
 .content-icons > a {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
