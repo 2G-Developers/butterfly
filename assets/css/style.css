@@ -26,12 +26,15 @@ body {
     /* align-items: flex-start; */
     align-items: center;
     position: relative;
+    flex-grow: 1;
 }
 
 .parent {
     position: relative;
-    height: 100%;
-    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .side-svg {
@@ -69,6 +72,9 @@ body {
 
 .content-logo {
     z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
     /* max-width:23% */
 }
 
@@ -104,7 +110,7 @@ body {
 
 .content-image {
 
-    max-width: 650px;
+    max-width: 40.625rem;
     /* width: 100%; */
     z-index: 10;
 
@@ -123,19 +129,25 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 75%;
+    }
+}
+
 @media screen and (max-width: 1025px) {
     html {
         font-size: 56.25%;
     }
 
     .side-svg {
-        right: -35.5%;
+        right: -58%;
     }
 }
 
 @media screen and (max-width: 768px) {
     html {
-        font-size: 50%;
+        font-size: 75%;
     }
 
     body {
@@ -195,7 +207,8 @@ body {
     line-height: .875;
 }
     .parent {
-        height: 90vh;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .left-circle {
@@ -210,6 +223,11 @@ body {
 @media screen and (max-width: 436px) {
     html {
         font-size: 50%;
+    }
+
+    .parent {
+        height: 100vh;
+        overflow: hidden;
     }
 
     .left-circle {
